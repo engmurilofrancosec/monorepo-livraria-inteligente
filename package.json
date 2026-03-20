@@ -1,0 +1,17 @@
+{
+  "name": "nexus-library-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "all": "npm run install:all",
+    "install:all": "node setup.js && npm install --legacy-peer-deps && cd backend && npm install && cd ../frontend && npm install --legacy-peer-deps",
+    "build": "cd backend && npm run build && cd ../frontend && npm run build",
+    "test": "concurrently \"cd backend && npm run test\" \"cd frontend && npm run test\"",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

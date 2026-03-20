@@ -1,0 +1,20 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Book {
+  id          String   @id @default(uuid())
+  title       String
+  author      String
+  category    String   @default("Geral")
+  status      String   @default("Quero Ler")
+  rating      Float?
+  description String?
+  orderIndex  Int?     @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
