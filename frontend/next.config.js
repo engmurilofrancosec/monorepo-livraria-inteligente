@@ -14,6 +14,7 @@ const nextConfig = {
     }
     return config;
   },
+  outputFileTracingRoot: require('path').join(__dirname, '../'),
 };
 
 module.exports = nextConfig;

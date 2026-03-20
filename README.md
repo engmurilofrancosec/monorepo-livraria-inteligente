@@ -6,6 +6,7 @@ Gerenciador de biblioteca pessoal com assistente de IA resiliente e design premi
 - **Design Premium**: Tema Dark moderno com animações fluidas (Framer Motion).
 - **Arquitetura Sólida**: Backend em Arquitetura Hexagonal e Frontend inspirado em DDD.
 - **Documentação Viva**: Storybook para todos os componentes visuais.
+- **Requisitos**: Node.js 25.x (v25.8.0+ recomendado).
 
 ## Documentação do Projeto
 
